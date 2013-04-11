@@ -1,0 +1,14 @@
+---
+    environment: production
+    chdir: /home/sef2
+    address: 127.0.0.1
+    user: root
+    group: root
+    port: 4567
+    pid: /home/sef2/thin.pid
+    rackup: /home/sef2/config.ru
+    log: /home/sef2/thin.log
+    max_conns: 1024
+    timeout: 30
+    max_persistent_conns: 512
+    daemonize: true
