@@ -14,7 +14,7 @@ module EdocService
 
     def self.corrige arquivo, params  
       arquivo_corrigido = []    
-      CSV.foreach("upload/upload_tmp/unziped/#{arquivo}", :col_sep => '|', :encoding => "ISO-8859-1") do |row|    
+      CSV.foreach("upload/upload_tmp/unziped/#{arquivo}", :col_sep => '|', :encoding => "ISO-8859-1", :quote_char => "'") do |row|    
         new_row = []
         
         if params[:registro].include?(row[1])          
