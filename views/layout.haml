@@ -6,6 +6,16 @@
     %link{:rel => "stylesheet", :href => "/lib/custom.css"}
   
   %body
+    .container
+      .navbar
+        .navbar-inner
+          %ul.nav
+            %li
+              %a{:href => "/"} Início
+            %li
+              %a{:href => "/corrigir-sef"} Corrgir SEF 2
+            %li
+              %a{:href => "/filtrar-edoc"} Filtrar registros E-DOC
     = yield    
   
   %script{:src => "/lib/jquery-1.7.2.min.js", :type => "text/javascript"}
